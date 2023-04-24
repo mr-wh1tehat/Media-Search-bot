@@ -1,8 +1,9 @@
+import os
 import re
 from os import environ
-
+from dotenv import load_dotenv
 id_pattern = re.compile(r'^.\d+$')
-
+load_dotenv()
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
 USER_SESSION = environ.get('USER_SESSION', 'User_Bot')
